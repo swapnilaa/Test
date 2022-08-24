@@ -4,6 +4,7 @@ import Dropdownc from './Dropdownc';
 import Information from './Information';
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar';
+import NeedToLogin from './NeedToLogin';
 
 export default class Home extends Component {
     wholeinfo=[
@@ -41,7 +42,9 @@ export default class Home extends Component {
         console.log(this.wholeinfo);
     }
     render() {
-    return (
+    
+   
+        return (
       <>
         <Navbar/>
         <Dropdownc  drlist={this.state.dropdownlist2} onDisp={(fort)=>{this.handleDisplay(fort)}}/>

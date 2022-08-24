@@ -16,10 +16,9 @@ function App() {
       <Route path='/tasks' component={Tasks}/>
       <Route path='/user' component={User}/>
       <Route path='/home' component={Home}/>      
-      <Route path='/'exact component={Login}/>
-      <Route path='/' component={Notfound}/>      
-            
-      <Redirect to={Notfound }/>
+      <Route path='/notfound' component={Notfound}/>      
+      <Route path='/'exact component={Login}/>      
+      <Redirect to='/notfound'/>
       </Switch>  
       </BrowserRouter>  
     </div>

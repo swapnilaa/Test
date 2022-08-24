@@ -10,6 +10,7 @@ export default class User extends Component {
   handleChangePassword = () => {
     this.setState({ isChangePasswordPressed: true });
     console.log(this.state.isChangePasswordPressed);
+    console.log(this.props.value1);
   };
 
   handleInputChange = (e) => {
